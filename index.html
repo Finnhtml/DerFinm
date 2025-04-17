@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DerFinm - Dein Lieblingsstreamer auf Twitch</title>
+    <meta name="description" content="Offizielle Website von DerFinm, deinem unterhaltsamen Twitch-Streamer. Schau vorbei für Live-Streams, VODs und mehr!">
+    <meta name="keywords" content="Twitch, Streamer, DerFinm, Gaming, Live-Stream, Community, TikTok, Kontaktformular">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #18181b;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #28282d;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #6c56c9; /* Violett als Akzent */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav a {
+            color: #a9a9b3;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #e91e63; /* Pink beim Hovern */
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #202023;
+        }
+        .hero h2 {
+            margin-top: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero a {
+            background-color: #6c56c9; /* Violett als Hauptfarbe */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .hero a:hover {
+            background-color: #e91e63; /* Pink beim Hovern */
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 50px;
+            background-color: #28282d;
+        }
+        .social-links h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #f0f0f0; /* Helle Farbe für die Überschrift */
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #a9a9b3;
+            font-size: 1.8em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #e91e63; /* Pink beim Hovern */
+        }
+        .content-section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #6c56c9; /* Violett als Akzent */
+            padding-bottom: 10px;
+            color: #f0f0f0; /* Helle Farbe für die Überschrift */
+        }
+        .contact-form {
+            background-color: #28282d;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 80px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 12px;
+            color: #f0f0f0;
+            font-size: 1.1em;
+        }
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 16px);
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #f0f0f0;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .contact-form button[type="submit"] {
+            background-color: #6c56c9; /* Violett als Hauptfarbe */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button[type="submit"]:hover {
+            background-color: #e91e63; /* Pink beim Hovern */
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #28282d;
+            color: #a9a9b3;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+            border-top: 2px solid #6c56c9; /* Violett als Akzent */
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DerFinm</h1>
+        <nav>
+            <ul>
+                <li><a href="#uber-mich">Über Mich</a></li>
+                <li><a href="#social">Social Media</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Willkommen auf meiner offiziellen Website!</h2>
+        <p>Hier findest du alle Infos rund um meine Streams und Community.</p>
+        <a href="https://www.twitch.tv/derfinm" target="_blank">Schau auf Twitch vorbei</a>
+    </section>
+
+    <section id="uber-mich" class="content-section">
+        <h2>Über Mich</h2>
+        <p>Hallo! Mein Name ist Finn und ich bin ein leidenschaftlicher Gamer und Streamer auf Twitch unter dem Namen <span style="font-weight: bold;">DerFinm</span>.</p>
+        <p>Ich streame hauptsächlich [füge hier deine Hauptspielkategorien ein, z.B. Strategiespiele, Shooter, Indie-Games] und liebe es, mich mit meiner Community auszutauschen. Mein Ziel ist es, eine positive und unterhaltsame Umgebung für alle zu schaffen.</p>
+        <p>Abseits vom Streaming [füge hier ein paar persönliche Infos ein, z.B. Hobbys, Interessen].</p>
+    </section>
+
+    <section id="social" class="content-section social-links">
+        <h2>Folge mir auf Social Media</h2>
+        <a href="https://www.twitch.tv/derfinm" target="_blank">Twitch</a>
+        <a href="https://www.tiktok.com/@twitch.derfinm" target="_blank">TikTok</a>
+        </section>
+
+    <section id="kontakt" class="content-section">
+        <h2>Kontakt</h2>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mldjyeow" method="POST">
+                <label for="email">Deine E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Deine Nachricht:</label>
+                <textarea id="message" name="message" rows="7" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear">2025</span> DerFinm - Alle Rechte vorbehalten.</p>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
