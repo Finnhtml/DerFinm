@@ -4,219 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DerFinm - Dein Lieblingsstreamer auf Twitch</title>
-    <meta name="description" content="Offizielle Website von DerFinm, deinem unterhaltsamen Twitch-Streamer. Schau vorbei für Live-Streams, VODs und mehr!">
-    <meta name="keywords" content="Twitch, Streamer, DerFinm, Gaming, Live-Stream, Community, TikTok, Kontaktformular">
+    <meta name="description" content="Offizielle Website von DerFinm, deinem unterhaltsamen Twitch-Streamer.">
+    <meta name="keywords" content="Twitch, Streamer, DerFinm, Gaming, Live-Stream, Community, TikTok, Kontaktformular, Gästebuch">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #18181b;
-            color: #f0f0f0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #28282d;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 2px solid #6c56c9; /* Violett als Akzent */
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-        nav a {
-            color: #a9a9b3;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #e91e63; /* Pink beim Hovern */
-        }
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background-color: #202023;
-        }
-        .hero h2 {
-            margin-top: 0;
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #ccc;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .hero a {
-            background-color: #6c56c9; /* Violett als Hauptfarbe */
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .hero a:hover {
-            background-color: #e91e63; /* Pink beim Hovern */
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 50px;
-            padding-bottom: 50px;
-            background-color: #28282d;
-        }
-        .social-links h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #f0f0f0; /* Helle Farbe für die Überschrift */
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 0 15px;
-            color: #a9a9b3;
-            font-size: 1.8em;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .social-links a:hover {
-            color: #e91e63; /* Pink beim Hovern */
-        }
-        .content-section {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .content-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #6c56c9; /* Violett als Akzent */
-            padding-bottom: 10px;
-            color: #f0f0f0; /* Helle Farbe für die Überschrift */
-        }
-        .contact-form {
-            background-color: #28282d;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 80px;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 12px;
-            color: #f0f0f0;
-            font-size: 1.1em;
-        }
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: calc(100% - 16px);
-            padding: 12px;
-            margin-top: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #555;
-            background-color: #333;
-            color: #f0f0f0;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 1em;
-        }
-        .contact-form button[type="submit"] {
-            background-color: #6c56c9; /* Violett als Hauptfarbe */
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .contact-form button[type="submit"]:hover {
-            background-color: #e91e63; /* Pink beim Hovern */
-        }
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #28282d;
-            color: #a9a9b3;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.9em;
-            border-top: 2px solid #6c56c9; /* Violett als Akzent */
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <h1>DerFinm</h1>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #18181b; color: #f0f0f0; line-height: 1.6;">
+
+    <header style="background-color: #28282d; padding: 20px 0; text-align: center; border-bottom: 2px solid #6c56c9;">
+        <h1 style="margin: 0; font-size: 2em; font-weight: bold;">DerFinm</h1>
         <nav>
-            <ul>
-                <li><a href="#uber-mich">Über Mich</a></li>
-                <li><a href="#social">Social Media</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+            <ul style="list-style: none; padding: 0; margin-top: 20px; text-align: center;">
+                <li style="display: inline; margin: 0 20px;"><a href="#uber-mich" style="color: #a9a9b3; text-decoration: none; font-size: 1.1em;">Über Mich</a></li>
+                <li style="display: inline; margin: 0 20px;"><a href="#social" style="color: #a9a9b3; text-decoration: none; font-size: 1.1em;">Social Media</a></li>
+                <li style="display: inline; margin: 0 20px;"><a href="#gastebuch" style="color: #a9a9b3; text-decoration: none; font-size: 1.1em;">Gästebuch</a></li>
+                <li style="display: inline; margin: 0 20px;"><a href="#kontakt" style="color: #a9a9b3; text-decoration: none; font-size: 1.1em;">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Willkommen auf meiner offiziellen Website!</h2>
-        <p>Hier findest du alle Infos rund um meine Streams und Community.</p>
-        <a href="https://www.twitch.tv/derfinm" target="_blank">Schau auf Twitch vorbei</a>
+    <section class="hero" style="text-align: center; padding: 80px 20px; background-color: #202023;">
+        <h2 style="margin-top: 0; font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Willkommen auf meiner offiziellen Website!</h2>
+        <p style="font-size: 1.2em; color: #ccc; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Hier findest du alle Infos rund um meine Streams und Community.</p>
+        <a href="https://www.twitch.tv/derfinm" target="_blank" style="background-color: #6c56c9; color: white; padding: 20px 40px; text-decoration: none; border-radius: 10px; font-size: 1.5em; font-weight: bold;">Schau auf Twitch vorbei</a>
     </section>
 
-    <section id="uber-mich" class="content-section">
-        <h2>Über Mich</h2>
-        <p>Hallo! Mein Name ist Finn und ich bin ein leidenschaftlicher Gamer und Streamer auf Twitch unter dem Namen <span style="font-weight: bold;">DerFinm</span>.</p>
-        <p>Ich streame hauptsächlich [füge hier deine Hauptspielkategorien ein, z.B. Strategiespiele, Shooter, Indie-Games] und liebe es, mich mit meiner Community auszutauschen. Mein Ziel ist es, eine positive und unterhaltsame Umgebung für alle zu schaffen.</p>
-        <p>Abseits vom Streaming [füge hier ein paar persönliche Infos ein, z.B. Hobbys, Interessen].</p>
+    <section id="uber-mich" class="content-section" style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 1.8em; margin-bottom: 25px; border-bottom: 2px solid #6c56c9; padding-bottom: 10px;">Über Mich</h2>
+        <p>Hallo! Mein Name ist Finn und ich bin ein leidenschaftlicher Gamer und Streamer auf Twitch unter dem Namen <strong>DerFinm</strong>.</p>
+        <p>Ich streame hauptsächlich Fortnite, und noch weitere Coole Games. Außerdem liebe es, mich mit meiner Community auszutauschen. Mein Ziel ist es, eine positive und unterhaltsame Umgebung für alle zu schaffen.</p>
+        <p>Abseits vom Streaming sind meine Hobbys Video und Fotografie, außerdem hat es mir der 3d Druck angetan.</p>
     </section>
 
-    <section id="social" class="content-section social-links">
-        <h2>Folge mir auf Social Media</h2>
-        <a href="https://www.twitch.tv/derfinm" target="_blank">Twitch</a>
-        <a href="https://www.tiktok.com/@twitch.derfinm" target="_blank">TikTok</a>
-        </section>
+    <section id="social" class="content-section" style="padding: 60px 20px; text-align: center;">
+        <h2 style="font-size: 1.8em; margin-bottom: 25px; border-bottom: 2px solid #6c56c9; padding-bottom: 10px;">Folge mir auf Social Media</h2>
+        <div style="margin-top: 30px;">
+            <a href="https://www.twitch.tv/derfinm" target="_blank" style="display: inline-block; background-color: #6441a5; color: white; padding: 20px 40px; margin: 10px; border-radius: 12px; font-size: 1.5em; font-weight: bold; text-decoration: none;">Twitch</a>
+            <a href="https://www.tiktok.com/@twitch.derfinm" target="_blank" style="display: inline-block; background-color: #000000; color: white; padding: 20px 40px; margin: 10px; border-radius: 12px; font-size: 1.5em; font-weight: bold; text-decoration: none;">TikTok</a>
+        </div>
+    </section>
 
-    <section id="kontakt" class="content-section">
-        <h2>Kontakt</h2>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/mldjyeow" method="POST">
-                <label for="email">Deine E-Mail:</label>
-                <input type="email" id="email" name="email" required>
+    <section id="gastebuch" class="content-section" style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 1.8em; margin-bottom: 25px; border-bottom: 2px solid #6c56c9; padding-bottom: 10px;">Gästebuch</h2>
+        <div style="background-color: #28282d; padding: 30px; border-radius: 8px; margin-bottom: 80px;">
+            <form id="gastebuchFormular" action="https://formspree.io/f/mldjyeow" method="POST">
+                <label for="name" style="display: block; margin-bottom: 12px; font-size: 1.1em;">Dein Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #555; background-color: #333; color: #f0f0f0; border-radius: 5px; box-sizing: border-box; font-size: 1em;">
 
-                <label for="message">Deine Nachricht:</label>
-                <textarea id="message" name="message" rows="7" required></textarea>
+                <label for="nachricht" style="display: block; margin-bottom: 12px; font-size: 1.1em;">Deine Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" rows="5" required style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #555; background-color: #333; color: #f0f0f0; border-radius: 5px; box-sizing: border-box; font-size: 1em;"></textarea>
 
-                <button type="submit">Senden</button>
+                <div style="margin-bottom: 20px;">
+                    <input type="checkbox" id="veroffentlichen" name="veroffentlichen" value="Ja" style="margin-right: 8px;">
+                    <label for="veroffentlichen" style="font-size: 1.1em;">Darf die Nachricht veröffentlicht werden?</label>
+                </div>
+
+                <button type="submit" style="background-color: #6c56c9; color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em; font-weight: bold;">Eintrag absenden</button>
             </form>
         </div>
     </section>
 
-    <footer>
+    <section id="kontakt" class="content-section" style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 1.8em; margin-bottom: 25px; border-bottom: 2px solid #6c56c9; padding-bottom: 10px;">Kontakt</h2>
+        <div style="background-color: #28282d; padding: 30px; border-radius: 8px; margin-bottom: 80px;">
+            <form action="https://formspree.io/f/mldjyeow" method="POST">
+                <label for="email" style="display: block; margin-bottom: 12px; font-size: 1.1em;">Deine E-Mail:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #555; background-color: #333; color: #f0f0f0; border-radius: 5px; box-sizing: border-box; font-size: 1em;">
+
+                <label for="message" style="display: block; margin-bottom: 12px; font-size: 1.1em;">Deine Nachricht:</label>
+                <textarea id="message" name="message" rows="7" required style="width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #555; background-color: #333; color: #f0f0f0; border-radius: 5px; box-sizing: border-box; font-size: 1em;"></textarea>
+
+                <button type="submit" style="background-color: #6c56c9; color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em; font-weight: bold;">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 30px 0; background-color: #28282d; color: #a9a9b3; font-size: 0.9em; border-top: 2px solid #6c56c9;">
         <p>&copy; <span id="currentYear">2025</span> DerFinm - Alle Rechte vorbehalten.</p>
         <script>
             document.getElementById("currentYear").textContent = new Date().getFullYear();
         </script>
     </footer>
+
 </body>
 </html>
